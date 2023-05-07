@@ -1,4 +1,17 @@
+# devtools::install_github('catboost/catboost', subdir = 'catboost/R-package')
 library(DT)
+library(devtools)
+
+options(timeout=600)
+library(devtools)
+devtools::install_github('catboost/catboost', subdir = 'catboost/R-package')
+
+
+devtools::install_github('https://github.com/catboost/catboost/releases/download/v1.2/catboost-R-Windows-1.2.tgz')
+
+
+
+# devtools::install_github('https://github.com/catboost/catboost/releases/download/v1.2/catboost-R-Windows-1.2.tgz', INSTALL_opts = c("--no-multiarch", "--no-test-load"))
 library(catboost)
 library(shinythemes)
 library(shiny)
